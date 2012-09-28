@@ -3,4 +3,4 @@ rfsManager
 
 Remote File System Manager
 
-Simple sshfs gui manager written in vala.
+Simple sshfs (ftp, sftp) gui manager written in vala.
