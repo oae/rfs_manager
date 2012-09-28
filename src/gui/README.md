@@ -1,1 +1,0 @@
-* This directory includes all soruce files related to graphical user interface.
