@@ -1,4 +1,4 @@
-rfsManager
+rfs-manager
 ==========
 
 Remote File System Manager
