@@ -1,3 +1,7 @@
-data/.ignore
-i18n/.ignore
-test/.ignore
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+*.ignore
