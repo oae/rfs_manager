@@ -1,9 +1,5 @@
 using Gtk;
 
-public static void button_clicked(Button button) {
-	button.label = "Thanks!";
-}
-
 public static int main(string [] argv) {
 	Gtk.init (ref argv);
 
