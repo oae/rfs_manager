@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <!-- interface-requires gtk+ 3.0 -->
-  <object class="GtkWindow" id="window1">
+  <object class="GtkWindow" id="mainwindow">
     <property name="width_request">640</property>
     <property name="height_request">480</property>
     <property name="can_focus">False</property>
@@ -18,7 +18,7 @@
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <child>
-          <object class="GtkToolbar" id="toolbar1">
+          <object class="GtkToolbar" id="toolbar">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="toolbar_style">icons</property>
@@ -90,7 +90,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkStatusbar" id="statusbar2">
+          <object class="GtkStatusbar" id="statusbar">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="orientation">vertical</property>
@@ -112,35 +112,36 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="enable_grid_lines">both</property>
+                <property name="enable_tree_lines">True</property>
                 <child internal-child="selection">
                   <object class="GtkTreeSelection" id="treeview-selection2"/>
                 </child>
                 <child>
-                  <object class="GtkTreeViewColumn" id="treeviewcolumn1">
+                  <object class="GtkTreeViewColumn" id="connection_alias_column">
                     <property name="title" translatable="yes">Alias</property>
                     <property name="clickable">True</property>
                   </object>
                 </child>
                 <child>
-                  <object class="GtkTreeViewColumn" id="treeviewcolumn2">
+                  <object class="GtkTreeViewColumn" id="connection_type_column">
                     <property name="title" translatable="yes">Type</property>
                     <property name="clickable">True</property>
                   </object>
                 </child>
                 <child>
-                  <object class="GtkTreeViewColumn" id="treeviewcolumn3">
+                  <object class="GtkTreeViewColumn" id="connection_port_column">
                     <property name="title" translatable="yes">Port</property>
                     <property name="clickable">True</property>
                   </object>
                 </child>
                 <child>
-                  <object class="GtkTreeViewColumn" id="treeviewcolumn4">
+                  <object class="GtkTreeViewColumn" id="connection_mountpoint_column">
                     <property name="title" translatable="yes">Mount Point</property>
                     <property name="clickable">True</property>
                   </object>
                 </child>
                 <child>
-                  <object class="GtkTreeViewColumn" id="treeviewcolumn5">
+                  <object class="GtkTreeViewColumn" id="connection_username_column">
                     <property name="title" translatable="yes">User Name</property>
                     <property name="clickable">True</property>
                   </object>
