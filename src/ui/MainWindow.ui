@@ -32,6 +32,7 @@
                 <property name="label" translatable="yes">Connect</property>
                 <property name="use_underline">True</property>
                 <property name="stock_id">gtk-connect</property>
+                <signal name="clicked" handler="rfs_manager_window_rfs_window_on_add_connection_button_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -48,6 +49,7 @@
                 <property name="label" translatable="yes">toolbutton2</property>
                 <property name="use_underline">True</property>
                 <property name="stock_id">gtk-delete</property>
+                <signal name="clicked" handler="rfs_manager_window_rfs_window_on_remove_connection_button_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -73,9 +75,9 @@
                 <property name="can_focus">False</property>
                 <property name="tooltip_text" translatable="yes">Properties</property>
                 <property name="use_action_appearance">False</property>
-                <property name="label" translatable="yes">Properties</property>
                 <property name="use_underline">True</property>
                 <property name="stock_id">gtk-properties</property>
+                <signal name="clicked" handler="rfs_manager_window_rfs_window_on_appmenu_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
