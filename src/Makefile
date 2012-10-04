@@ -26,10 +26,10 @@ all:
 
 # make install
 install:
-		@mkdir -p /usr/local/bin/
-		@mkdir -p /usr/local/share/$(PROGRAM)/
-		@find . -name "*.ui" -exec cp "{}" /usr/local/share/$(PROGRAM)/ \;
-		@cp $(PROGRAM) /usr/local/bin/
+	@mkdir -p /usr/local/bin/
+	@mkdir -p /usr/local/share/$(PROGRAM)/
+	@find . -name "*.ui" -exec cp "{}" /usr/local/share/$(PROGRAM)/ \;
+	@cp $(PROGRAM) /usr/local/bin/
 
 
 # make clean
