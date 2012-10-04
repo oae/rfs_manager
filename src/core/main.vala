@@ -16,6 +16,9 @@ public static int main(string [] argv) {
         builder.connect_signals(window);
 
         window = builder.get_object("mainwindow") as Window;
+        Toolbar toolbar = builder.get_object("toolbar") as Toolbar;
+        var context = toolbar.get_style_context();
+        context.add_class(STYLE_CLASS_PRIMARY_TOOLBAR);
 
         window.show_all ();
         Gtk.main ();
